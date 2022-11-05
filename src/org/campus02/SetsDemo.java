@@ -15,9 +15,13 @@ public class SetsDemo {
         System.out.println(strings.size());
         System.out.println(strings.toString());
 
-        HashSet<Person> people = new HashSet<>();
 
+        // neues HashSet von Person erstellen
         HashSet<Person> persons = new HashSet<>(); //STRG + ALT + V
+        // Person Max hinzufügen
         persons.add(new Person("Max", "Mustermann"));
+        // Person Max nochmals hinzufügen
+        persons.add(new Person("Max", "Mustermann"));
+        System.out.println(persons.toString());
     }
 }
