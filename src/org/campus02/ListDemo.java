@@ -9,7 +9,7 @@ public class ListDemo {
 
         integers.add(1);
         integers.add(3);
-        System.out.println(integers.size()); // Ausgabe der Größe
+        System.out.println(integers.size()); // Ausgabe der Größe,
 
         ArrayList<String> strings = new ArrayList<>();
         strings.add("Hallo");
