@@ -3,6 +3,7 @@ package org.ueabend;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class StudentMapDemo {
     public static void main(String[] args) {
@@ -38,8 +39,14 @@ public class StudentMapDemo {
         System.out.println("gradesOfStudents.containsKey(\"Max Mustermann\") = " + gradesOfStudents.containsKey("Max Mustermann"));
         System.out.println("gradesOfStudents.containsKey(\"Susi Sorglos\") = " + gradesOfStudents.containsKey("Susi Sorglos"));
 
-        for (String student : gradesOfStudents.keySet()) {
+        ArrayList<String> keys = new ArrayList<>();
+        for (int i = 0; i < keys.size(); i++) {
+            String student = keys.get(i);
             System.out.println("student = " + student);
+        }
+
+        for (String test : gradesOfStudents.keySet()) {
+            System.out.println("student = " + test);
         }
 
         for (Map.Entry<String, ArrayList<Integer>> entry: gradesOfStudents.entrySet()) {
